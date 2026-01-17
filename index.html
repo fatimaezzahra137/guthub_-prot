@@ -3,56 +3,156 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fatima-Ezzahra | Data Analyst Portfolio</title>
+    <title>Fatima-Ezzahra | Portfolio Data Analyst</title>
     <style>
-        :root { --primary: #2c3e50; --secondary: #3498db; --accent: #e67e22; --light: #ecf0f1; }
-        body { font-family: 'Segoe UI', sans-serif; line-height: 1.6; margin: 0; color: #333; background: var(--light); }
-        header { background: var(--primary); color: white; padding: 60px 20px; text-align: center; }
-        .container { max-width: 1000px; margin: auto; padding: 20px; }
-        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin-top: 20px; }
-        .card { background: white; padding: 20px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); border-top: 5px solid var(--secondary); }
-        .tech-tag { background: #dbeafe; color: #1e40af; padding: 4px 10px; border-radius: 15px; font-size: 0.85em; font-weight: bold; margin-right: 5px; }
-        h2 { border-bottom: 2px solid var(--secondary); padding-bottom: 10px; color: var(--primary); }
+        :root {
+            --primary: #2c3e50;
+            --secondary: #3498db;
+            --bg: #f4f7f6;
+            --text: #333;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            background-color: var(--bg);
+            color: var(--text);
+        }
+        header {
+            background: var(--primary);
+            color: white;
+            padding: 50px 20px;
+            text-align: center;
+        }
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 20px;
+        }
+        h2 {
+            text-align: center;
+            color: var(--primary);
+            border-bottom: 3px solid var(--secondary);
+            display: inline-block;
+            width: 100%;
+            padding-bottom: 10px;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin-top: 30px;
+        }
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+        }
+        .tech-tag {
+            background: #e1f5fe;
+            color: #0277bd;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.8em;
+            font-weight: bold;
+            margin-right: 5px;
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+        .btn {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 15px;
+            background: var(--secondary);
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            text-align: center;
+        }
+        .btn:hover {
+            background: #2980b9;
+        }
+        footer {
+            text-align: center;
+            padding: 40px;
+            background: var(--primary);
+            color: white;
+            margin-top: 50px;
+        }
     </style>
 </head>
 <body>
 
 <header>
     <h1>Fatima-Ezzahra</h1>
-    <p>Data Analyst | Experte SQL & Machine Learning</p>
+    <p>Diplômée en Mathématiques et Informatique | Data Analyste & IA</p>
+    <p>Trilingue : Français - Anglais - Allemand</p>
 </header>
 
 <div class="container">
-    <h2>À propos</h2>
-    <p>Développeuse passionnée par la structure des données, j'allie rigueur mathématique et expertise technique pour transformer la donnée en décisions stratégiques.</p>
+    
+    <h2>Mes Projets Data & Développement</h2>
 
-    <h2>Compétences Techniques</h2>
     <div class="grid">
         <div class="card">
-            <h3>Machine Learning & IA</h3>
-            <p>Déploiement de modèles prédictifs : Random Forest, SVM, XGBoost, PCA.</p>
-            <span class="tech-tag">Python</span> <span class="tech-tag">Scikit-Learn</span>
+            <div>
+                <h3>Machine Learning & IA</h3>
+                <p>Analyse de données et déploiement de modèles prédictifs (Random Forest, SVM, XGBoost). Focus sur la rigueur mathématique et l'IA Générative.</p>
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">Machine Learning</span>
+                <span class="tech-tag">IA</span>
+            </div>
+            <a href="https://github.com/fatimaezzahra137/guthub_-prot" target="_blank" class="btn">Voir le projet sur GitHub</a>
         </div>
+
         <div class="card">
-            <h3>Bases de Données</h3>
-            <p>Maîtrise avancée de SQL/PLSQL et gestion d'Oracle Database.</p>
-            <span class="tech-tag">Oracle</span> <span class="tech-tag">MySQL</span> <span class="tech-tag">T-SQL</span>
+            <div>
+                <h3>Web Scraping avec Django</h3>
+                <p>Extraction automatisée de données web et développement d'une interface de gestion sous le framework Django.</p>
+                <span class="tech-tag">Django</span>
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">BeautifulSoup</span>
+            </div>
+            <a href="https://github.com/fatimaezzahra137/Projet-de-Web-Scraping-avec-Django" target="_blank" class="btn">Voir le projet sur GitHub</a>
+        </div>
+
+        <div class="card">
+            <div>
+                <h3>Bases de Données (SQL/PLSQL)</h3>
+                <p>Optimisation de requêtes complexes et gestion de bases de données Oracle. Expertise acquise lors de mes stages au Technopark.</p>
+                <span class="tech-tag">SQL</span>
+                <span class="tech-tag">Oracle</span>
+                <span class="tech-tag">PL/SQL</span>
+            </div>
+            <a href="https://github.com/fatimaezzahra137/guthub_-prot" target="_blank" class="btn">Voir le projet sur GitHub</a>
+        </div>
+
+        <div class="card">
+            <div>
+                <h3>Système IoT & Robotique</h3>
+                <p>Développement de robots logiciels et interface de contrôle web via Arduino (Projet de Fin d'Études).</p>
+                <span class="tech-tag">Arduino</span>
+                <span class="tech-tag">IoT</span>
+                <span class="tech-tag">C++</span>
+            </div>
+            <a href="https://github.com/fatimaezzahra137/guthub_-prot" target="_blank" class="btn">Voir le projet sur GitHub</a>
         </div>
     </div>
 
-    <h2>Projets Réalisés</h2>
-    <div class="grid">
-        <div class="card">
-            <h3>Web Scraping & Django</h3>
-            <p>Automatisation de collecte de données web intégrée à un framework Django.</p>
-            <a href="https://github.com/fatimaezzahra137/Projet-de-Web-Scraping-avec-Django" style="color:var(--secondary);">Voir le projet →</a>
-        </div>
-        <div class="card">
-            <h3>Analyse IoT (PFE)</h3>
-            <p>Développement de robots logiciels pour applications web via Arduino.</p>
-        </div>
-    </div>
 </div>
+
+<footer>
+    <p>&copy; 2026 Fatima-Ezzahra - Portfolio Data Analyst</p>
+</footer>
 
 </body>
 </html>
