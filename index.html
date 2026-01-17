@@ -2,25 +2,57 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Portfolio | Data Analyste</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fatima-Ezzahra | Data Analyst Portfolio</title>
     <style>
-        body { font-family: Arial, sans-serif; line-height: 1.6; padding: 20px; color: #333; }
-        h1 { color: #2c3e50; }
-        .tech { color: #e67e22; font-weight: bold; }
+        :root { --primary: #2c3e50; --secondary: #3498db; --accent: #e67e22; --light: #ecf0f1; }
+        body { font-family: 'Segoe UI', sans-serif; line-height: 1.6; margin: 0; color: #333; background: var(--light); }
+        header { background: var(--primary); color: white; padding: 60px 20px; text-align: center; }
+        .container { max-width: 1000px; margin: auto; padding: 20px; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin-top: 20px; }
+        .card { background: white; padding: 20px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); border-top: 5px solid var(--secondary); }
+        .tech-tag { background: #dbeafe; color: #1e40af; padding: 4px 10px; border-radius: 15px; font-size: 0.85em; font-weight: bold; margin-right: 5px; }
+        h2 { border-bottom: 2px solid var(--secondary); padding-bottom: 10px; color: var(--primary); }
     </style>
 </head>
 <body>
-    <h1>Data Analyste - Expertise IA & SQL</h1>
-    <p>Passionnée par la data, j'allie rigueur mathématique et expertise technique.</p>
-    
-    <h3>Compétences Techniques</h3>
-    <ul>
-        <li><span class="tech">Langages :</span> Python, SQL/PLSQL, Django, Flask</li>
-        <li><span class="tech">Data/IA :</span> Machine Learning (Random Forest, XGBoost, SVM), IA Générative</li>
-        <li><span class="tech">Outils :</span> VS Code, GitHub, Oracle, MySQL</li>
-    </ul>
 
-    <h3>Expériences Clés</h3>
-    <p>Stage chez <strong>Houssni Job (Technopark)</strong> : Structuration de bases de données.</p>
+<header>
+    <h1>Fatima-Ezzahra</h1>
+    <p>Data Analyst | Experte SQL & Machine Learning</p>
+</header>
+
+<div class="container">
+    <h2>À propos</h2>
+    <p>Développeuse passionnée par la structure des données, j'allie rigueur mathématique et expertise technique pour transformer la donnée en décisions stratégiques.</p>
+
+    <h2>Compétences Techniques</h2>
+    <div class="grid">
+        <div class="card">
+            <h3>Machine Learning & IA</h3>
+            <p>Déploiement de modèles prédictifs : Random Forest, SVM, XGBoost, PCA.</p>
+            <span class="tech-tag">Python</span> <span class="tech-tag">Scikit-Learn</span>
+        </div>
+        <div class="card">
+            <h3>Bases de Données</h3>
+            <p>Maîtrise avancée de SQL/PLSQL et gestion d'Oracle Database.</p>
+            <span class="tech-tag">Oracle</span> <span class="tech-tag">MySQL</span> <span class="tech-tag">T-SQL</span>
+        </div>
+    </div>
+
+    <h2>Projets Réalisés</h2>
+    <div class="grid">
+        <div class="card">
+            <h3>Web Scraping & Django</h3>
+            <p>Automatisation de collecte de données web intégrée à un framework Django.</p>
+            <a href="https://github.com/fatimaezzahra137/Projet-de-Web-Scraping-avec-Django" style="color:var(--secondary);">Voir le projet →</a>
+        </div>
+        <div class="card">
+            <h3>Analyse IoT (PFE)</h3>
+            <p>Développement de robots logiciels pour applications web via Arduino.</p>
+        </div>
+    </div>
+</div>
+
 </body>
 </html>
