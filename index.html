@@ -109,9 +109,8 @@
 }
 
 .about-photo {
-  width: 100%;
+  width: 200%;
   max-width: 200px;
-  height: auto;
   border-radius: 50%;
   object-fit: cover;
   border: 3px solid #4a90e2;
@@ -125,10 +124,13 @@
 
 /* Sur mobile (écran < 600px), la photo sera centrée au-dessus du texte */
 @media (max-width: 600px) {
-  .about-container {
-    flex-direction: column;
-    text-align: center;
+  img.about-photo {
+    width: 120px;
+    height: 120px;
+    margin: auto;
   }
+}
+
   .about-text {
     text-align: center;
   }
