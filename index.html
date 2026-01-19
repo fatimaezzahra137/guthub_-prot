@@ -67,11 +67,72 @@
 </head>
 <body>
   <header>
-    <img src="images/photo%20fati.jpeg" alt="Fatima Ezzahra Barradi" style="width:150px; height:150px; border-radius:50%; object-fit:cover; border: 3px solid white; margin-bottom: 10px;">
-    
     <h1>Fatima Ezzahra Barradi</h1>
     <p>Data Analyst & Développeuse passionnée par la structure des données et l’optimisation</p>
 </header>
+<section>
+  <h2>À propos</h2>
+  <div class="about-container">
+    <!-- PHOTO -->
+    <img src="images/photo-fati.jpeg" alt="Photo de Fatima Ezzahra Barradi" class="about-photo">
+    
+    <!-- TEXTE -->
+    <div class="about-text">
+      <p>
+        Je suis <strong>Fatima Ezzahra Barradi</strong>, Data Analyst et Développeuse passionnée par la structure des données et l’optimisation. 
+        Mon objectif est de transformer les données en solutions concrètes pour répondre aux enjeux business. 
+        Grâce à ma double compétence en <strong>mathématiques</strong> et <strong>informatique</strong>, j’aide les entreprises à 
+        <strong>analyser, automatiser et améliorer leurs processus</strong>.
+      </p>
+      <p>
+        J’ai travaillé sur des projets allant de la <strong>maintenance prédictive</strong> à la <strong>détection de spam</strong>, 
+        en passant par l’<strong>automatisation par IA générative</strong>. 
+        Mon approche est centrée sur la résolution de problèmes réels, avec un souci constant de la qualité et de l’efficacité.
+      </p>
+    </div>
+  </div>
+</section>
+
+<style>
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap; /* permet de passer en colonne sur mobile */
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  padding: 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.about-photo {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #4a90e2;
+}
+
+.about-text {
+  flex: 1;
+  min-width: 250px;
+  text-align: left;
+}
+
+/* Sur mobile (écran < 600px), la photo sera centrée au-dessus du texte */
+@media (max-width: 600px) {
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .about-text {
+    text-align: center;
+  }
+}
+</style>
 
   <section>
     <h2>Éducation</h2>
