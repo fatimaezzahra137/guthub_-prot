@@ -75,10 +75,8 @@
 <section>
   <h2>À propos</h2>
   <div class="about-container">
-    <!-- PHOTO -->
-    <img src="images/photo-fati.jpeg" alt="Photo de Fatima Ezzahra Barradi" class="about-photo">
     
-    <!-- TEXTE -->
+    <!-- TEXTE À GAUCHE -->
     <div class="about-text">
       <p>
         Je suis <strong>Fatima Ezzahra Barradi</strong>, Data Analyst et Développeuse passionnée par la structure des données et l’optimisation. 
@@ -92,6 +90,9 @@
         Mon approche est centrée sur la résolution de problèmes réels, avec un souci constant de la qualité et de l’efficacité.
       </p>
     </div>
+
+    <!-- PHOTO À DROITE -->
+    <img src="images/photo-fati.jpeg" alt="Photo de Fatima Ezzahra Barradi" class="about-photo">
   </div>
 </section>
 
@@ -101,7 +102,7 @@
   align-items: center;
   justify-content: center;
   gap: 30px;
-  flex-wrap: wrap; /* permet de passer en colonne sur mobile */
+  flex-wrap: wrap;
   background: white;
   border-radius: 8px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
@@ -110,24 +111,26 @@
   margin: auto;
 }
 
+.about-text {
+  flex: 1;
+  min-width: 250px;
+  text-align: left;
+  font-size: 1.1em;
+  color: #555;
+}
+
 .about-photo {
-  width: 200px;
-  height: 200px;
+  width: 180px;
+  height: 180px;
   border-radius: 50%;
   object-fit: cover;
   border: 3px solid #4a90e2;
 }
 
-.about-text {
-  flex: 1;
-  min-width: 250px;
-  text-align: left;
-}
-
-/* Sur mobile (écran < 600px), la photo sera centrée au-dessus du texte */
+/* Responsive sur mobile */
 @media (max-width: 600px) {
   .about-container {
-    flex-direction: column;
+    flex-direction: column-reverse;
     text-align: center;
   }
   .about-text {
@@ -135,6 +138,7 @@
   }
 }
 </style>
+
 
   <section>
     <h2>Éducation</h2>
